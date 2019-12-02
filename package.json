@@ -14,7 +14,8 @@
   "scripts": {
     "start": "npm run develop",
     "develop": "gatsby develop -H 0.0.0.0 --open",
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
+    "deploy": "npm run build && gh-pages -d example/public",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
@@ -23,14 +24,15 @@
   },
   "dependencies": {
     "@antv/g2": "^3.5.9",
-    "@antv/gatsby-theme-antv": "^0.10.7",
-    "@types/react": "^16.9.2",
-    "@types/react-dom": "^16.9.0",
-    "gatsby": "^2.15.34",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
+    "@antv/gatsby-theme-antv": "^0.10.7",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "gatsby": "^2.15.34",
+    "gh-pages": "^2.1.1",
     "husky": "^3.1.0",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1"
