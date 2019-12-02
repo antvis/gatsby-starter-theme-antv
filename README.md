@@ -20,7 +20,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
     ```shell
     # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/antvis/gatsby-starter-antv-theme
+    gatsby new my-default-starter https://github.com/antvis/gatsby-starter-theme-antv
     ```
 
 1.  **Start developing.**
@@ -92,6 +92,6 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/antvis/gatsby-starter-antv-theme)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/antvis/gatsby-starter-theme-antv)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
