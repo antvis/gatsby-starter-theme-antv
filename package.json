@@ -1,20 +1,25 @@
 {
+  "name": "gatsby-starter-antv-theme",
   "private": true,
-  "name": "example",
   "version": "1.0.0",
   "license": "MIT",
-  "homepage": "https://antvis.github.io",
+  "homepage": "https://gatsby-starter-antv-theme.antv.vision",
   "repository": {
     "type": "git",
-    "url": "https://github.com/antvis/antvis.github.io"
+    "url": "https://github.com/antvis/gatsby-starter-antv-theme"
   },
   "bugs": {
-    "url": "https://github.com/antvis/antvis.github.io/issues"
+    "url": "https://github.com/antvis/gatsby-starter-antv-theme/issues"
   },
   "scripts": {
-    "build": "npm run clean && gatsby build --prefix-paths --no-uglify",
-    "develop": "npm run clean && gatsby develop -H 0.0.0.0",
-    "clean": "gatsby clean"
+    "start": "npm run develop",
+    "develop": "gatsby develop -H 0.0.0.0 --open",
+    "build": "gatsby build",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "pretty-quick": "pretty-quick",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
     "@antv/g2": "^3.5.9",
@@ -22,12 +27,17 @@
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
     "gatsby": "^2.15.34",
-    "ptz-i18n": "^1.0.0",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2"
-  },
-  "devDependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "husky": "^3.1.0",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
